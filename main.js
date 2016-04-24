@@ -20,7 +20,7 @@ var SentimentRow = React.createClass({
     return (
     <tr>
       {topics.map(function(cell, index) {
-        return <CommentsCell onClick = {} key = {index} item = {cell}/>;
+        return <CommentsCell key = {index} item = {cell}/>;
       })}
     </tr>
     );
