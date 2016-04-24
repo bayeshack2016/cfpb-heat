@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <style>
+	table, tr, td, th, thead, tbody{
+		border: 2px solid;
+	}
+	table{
+		table-layout: fixed;
+		width: 800px;
+		height: 800px;
+	}
+	td{
+		width: 10%;
+		height: 10%;
+		overflow: hidden;
+		opacity: 0.2;
+		text-overflow: ellipsis;
+	}
+	td:hover{
+		opacity: 0.8;
+	}
+	td .selected{
+		opacity: 1.0;
+	}
+	.vertical-text {
+		transform: rotate(90deg);
+		transform-origin: left top 0;
+	}
+
+    </style>
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+    	<!-- This element's contents will be replaced with your component. -->
+	</div>
+	<div id="second">
+    	<!-- This element's contents will be replaced with your component. -->
+	</div>
+    <script type="text/babel" src="main.js"></script>
+  </body>
+</html>
